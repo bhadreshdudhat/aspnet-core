@@ -1033,6 +1033,23 @@ namespace BhadreshDudhat.VimeoApp.Migrations
                     b.ToTable("AbpUsers");
                 });
 
+            modelBuilder.Entity("BhadreshDudhat.VimeoApp.Domain.Models.UserNote", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Notes")
+                        .IsRequired();
+
+                    b.Property<string>("UserEmail")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserNotes");
+                });
+
             modelBuilder.Entity("BhadreshDudhat.VimeoApp.MultiTenancy.Tenant", b =>
                 {
                     b.Property<int>("Id")
