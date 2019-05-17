@@ -15,7 +15,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Abp.AutoMapper" Version="4.5.0" />
     <PackageReference Include="Abp.Castle.Log4Net" Version="4.3.0" />
+    <PackageReference Include="Abp.Web.Api" Version="4.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BhadreshDudhat.VimeoApp.Core\BhadreshDudhat.VimeoApp.Core.csproj" />
