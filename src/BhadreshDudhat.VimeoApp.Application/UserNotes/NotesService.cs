@@ -1,4 +1,5 @@
 ﻿using Abp.Application.Services.Dto;
+using Abp.Authorization;
 using Abp.Domain.Repositories;
 using BhadreshDudhat.VimeoApp.Domain.Models;
 using BhadreshDudhat.VimeoApp.UserNotes.Dto;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace BhadreshDudhat.VimeoApp.UserNotes
 {
+    [AbpAuthorize]
     public class NotesService : VimeoAppAppServiceBase, INotesService
     {
         private readonly IRepository<UserNote> _usernoteRepository;
