@@ -40,6 +40,26 @@ Estimated time : 10 Mins (depends on internet speed)
 ------------------------------------------------------
 
 
+Deployment
+
+https://bhadreshdudhat.azurewebsites.net
+
+Create database server[bhadreshdb](with username[bhadresh] and password[Nishtha1618]) and database(with database name  : BhadreshDB) on AZURE
+Go to Database and change Set SERVER Firewall : add rule to allow all IP addresses 0.0.0.0 to 255.255.255.255 
+https://github.com/Microsoft/azure-pipelines-tasks/issues/3981
+
+Change connection String in appsetting and update-database to run all migration 
+--connection String---
+Server=tcp:bhadreshdb.database.windows.net,1433;Initial Catalog=BhadreshDB;Persist Security Info=False;User ID=bhadresh;Password=Nishtha1618;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+
+Connection string will be added while publishing through VS2017
+
+
+-----------------------------------------------------
+
+
+
 
 
 
