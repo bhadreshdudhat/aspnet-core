@@ -55,6 +55,22 @@ Server=tcp:bhadreshdb.database.windows.net,1433;Initial Catalog=BhadreshDB;Persi
 
 Connection string will be added while publishing through VS2017
 
+https://docs.aspnetzero.com/documents/aspnet-core-angular/latest/Deployment-Angular-Publish-Azure
+
+ENABLE CORS on azure for 
+http://localhost:4200 and
+https://bhadreshngapp.azurewebsites.net
+
+Opening azure database in VS SQLserver Object Explorer
+
+Running combinations :
+server file : appsetting.json
+client files : developement : environment.ts, appconfig.json
+			   production   : environment.prod.ts, appconfig.production.json
+1. client & server on localhost using Azure database
+2. client & server on Azure using Azure database
+3. client & server on localhost using local database
+
 
 -----------------------------------------------------
 
